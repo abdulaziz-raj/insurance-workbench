@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "outDir": "dist",
+    "rootDir": "src",
+    "paths": {
+      "@workbench/schema": ["../../packages/schema/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

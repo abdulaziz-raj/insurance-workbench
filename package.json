@@ -1,0 +1,15 @@
+{
+  "name": "insurance-workbench",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=apps/api\" \"npm run dev --workspace=apps/web\"",
+    "typecheck": "tsc --build",
+    "seed": "tsx scripts/seed.ts",
+    "seed:rules": "tsx scripts/seed.ts --rules"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "typescript": "^5.4.5"
+  }
+}

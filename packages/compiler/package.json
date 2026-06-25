@@ -1,0 +1,12 @@
+{
+  "name": "@workbench/compiler",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "openai": "^6.44.0",
+    "unpdf": "^1.6.2"
+  }
+}

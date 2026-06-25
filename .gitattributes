@@ -1,0 +1,7 @@
+# Normalize line endings: text files use LF in the repo, checked out
+# with the platform's native endings. Keeps diffs clean across machines.
+* text=auto eol=lf
+
+# Treat fixtures and lockfiles as binary / non-diffable where appropriate
+*.pdf binary
+package-lock.json -diff
